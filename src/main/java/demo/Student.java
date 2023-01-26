@@ -1,11 +1,15 @@
 package demo;
 
+import java.util.List;
+
 public class Student {
 
     private Integer id;
     private String firstName;
     private String lastName;
     private boolean active;
+    private Address address;
+    private List languages;
 
     public Student() {
     }
@@ -40,5 +44,21 @@ public class Student {
 
     public void setActive(boolean active) {
         this.active = active;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public List getLanguages() {
+        return languages;
+    }
+
+    public void setLanguages(List languages) {
+        this.languages = languages;
     }
 }
