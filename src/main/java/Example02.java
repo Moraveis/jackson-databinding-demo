@@ -15,5 +15,9 @@ public class Example02 {
 
         System.out.println("First Name: " + student.getFirstName());
         System.out.println("Last Name: " + student.getLastName());
+        System.out.println("Street: " + student.getAddress().getStreet());
+        System.out.println("City: " + student.getAddress().getCity());
+        System.out.println("Languages: " + student.getLanguages());
+
     }
 }
