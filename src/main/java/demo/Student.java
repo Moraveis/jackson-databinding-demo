@@ -1,7 +1,10 @@
 package demo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.List;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Student {
 
     private Integer id;
@@ -9,7 +12,7 @@ public class Student {
     private String lastName;
     private boolean active;
     private Address address;
-    private List languages;
+    private List<String> languages;
 
     public Student() {
     }
@@ -54,11 +57,11 @@ public class Student {
         this.address = address;
     }
 
-    public List getLanguages() {
+    public List<String> getLanguages() {
         return languages;
     }
 
-    public void setLanguages(List languages) {
+    public void setLanguages(List<String> languages) {
         this.languages = languages;
     }
 }
